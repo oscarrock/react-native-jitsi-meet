@@ -46,6 +46,8 @@ repositories {
 
 dependencies {
     implementation ('org.jitsi.react:jitsi-meet-sdk:6.2.2') {
+      exclude group: 'com.facebook.react',module:'react-native-community-async-storage'
+      exclude group: 'com.facebook.react',module:'@react-native-community-async-storage/async-storage'
       transitive = true
     }
 }
